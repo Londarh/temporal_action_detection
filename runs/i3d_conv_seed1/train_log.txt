@@ -1,0 +1,38 @@
+device cuda | 20 classes | train videos 200 | test videos 211
+parameters: 18.1M
+epoch   1/35  loss 1.383 (cls 0.903, reg 0.480)  lr 2.00e-05  23s
+epoch   2/35  loss 0.935 (cls 0.619, reg 0.316)  lr 4.00e-05  19s
+epoch   3/35  loss 0.841 (cls 0.538, reg 0.303)  lr 6.00e-05  20s
+epoch   4/35  loss 0.786 (cls 0.502, reg 0.284)  lr 8.00e-05  20s
+epoch   5/35  loss 0.778 (cls 0.489, reg 0.289)  lr 1.00e-04  20s
+epoch   6/35  loss 0.755 (cls 0.473, reg 0.283)  lr 9.97e-05  21s
+epoch   7/35  loss 0.684 (cls 0.430, reg 0.254)  lr 9.89e-05  20s
+epoch   8/35  loss 0.691 (cls 0.427, reg 0.264)  lr 9.76e-05  20s
+epoch   9/35  loss 0.644 (cls 0.394, reg 0.249)  lr 9.57e-05  20s
+epoch  10/35  loss 0.637 (cls 0.384, reg 0.253)  lr 9.33e-05  20s
+epoch  11/35  loss 0.605 (cls 0.370, reg 0.235)  lr 9.05e-05  21s
+epoch  12/35  loss 0.549 (cls 0.331, reg 0.217)  lr 8.72e-05  20s
+epoch  13/35  loss 0.558 (cls 0.336, reg 0.223)  lr 8.35e-05  20s
+epoch  14/35  loss 0.512 (cls 0.305, reg 0.207)  lr 7.94e-05  20s
+epoch  15/35  loss 0.513 (cls 0.300, reg 0.212)  lr 7.50e-05  20s
+epoch  16/35  loss 0.475 (cls 0.278, reg 0.197)  lr 7.04e-05  21s
+epoch  17/35  loss 0.478 (cls 0.275, reg 0.203)  lr 6.55e-05  20s
+epoch  18/35  loss 0.400 (cls 0.225, reg 0.176)  lr 6.04e-05  20s
+epoch  19/35  loss 0.437 (cls 0.245, reg 0.192)  lr 5.53e-05  20s
+epoch  20/35  loss 0.405 (cls 0.227, reg 0.178)  lr 5.01e-05  20s
+epoch  21/35  loss 0.345 (cls 0.189, reg 0.156)  lr 4.48e-05  21s
+epoch  22/35  loss 0.365 (cls 0.199, reg 0.166)  lr 3.97e-05  20s
+epoch  23/35  loss 0.339 (cls 0.185, reg 0.155)  lr 3.46e-05  20s
+epoch  24/35  loss 0.322 (cls 0.174, reg 0.148)  lr 2.97e-05  20s
+epoch  25/35  loss 0.304 (cls 0.164, reg 0.141)  lr 2.50e-05  20s
+epoch  26/35  loss 0.288 (cls 0.155, reg 0.133)  lr 2.07e-05  21s
+epoch  27/35  loss 0.278 (cls 0.149, reg 0.129)  lr 1.66e-05  20s
+epoch  28/35  loss 0.247 (cls 0.131, reg 0.116)  lr 1.29e-05  20s
+epoch  29/35  loss 0.231 (cls 0.122, reg 0.109)  lr 9.58e-06  20s
+epoch  30/35  loss 0.240 (cls 0.126, reg 0.114)  lr 6.72e-06  20s
+epoch  31/35  loss 0.223 (cls 0.118, reg 0.105)  lr 4.34e-06  20s
+epoch  32/35  loss 0.213 (cls 0.113, reg 0.100)  lr 2.46e-06  20s
+epoch  33/35  loss 0.219 (cls 0.117, reg 0.102)  lr 1.10e-06  21s
+epoch  34/35  loss 0.203 (cls 0.109, reg 0.094)  lr 2.79e-07  20s
+epoch  35/35  loss 0.209 (cls 0.111, reg 0.097)  lr 2.74e-11  20s
+test mAP by tIoU: {"0.3": 74.34, "0.4": 69.55, "0.5": 61.38, "0.6": 50.17, "0.7": 36.35} | average: 58.36

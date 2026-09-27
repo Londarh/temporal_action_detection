@@ -1,0 +1,30 @@
+# Temporal action detection on THUMOS-14 with two-stream I3D features (stride 4, 16-frame clips).
+data:
+  feat_dir: /content/features            # folder of <video>.npy files, [T, 2048]
+  ann_dirs:                              # THUMOS-14 temporal annotation .txt folders
+    - /content/data/thumos14/annotations_val
+    - /content/data/thumos14/annotations_test
+  json_file: null                        # optional ActionFormer thumos14.json (per-video fps)
+
+model:
+  in_dim: 2048
+  dim: 512
+  levels: 6              # temporal pyramid, strides 1..32
+  stem_blocks: 2
+  window: 19             # local attention window (feature steps)
+  heads: 4
+  drop_path: 0.1
+  neck: transformer      # transformer | conv   (ablation)
+
+train:
+  seed: 0
+  epochs: 30             # after warmup
+  warmup_epochs: 5
+  batch_size: 2
+  max_len: 2304
+  lr: 0.0001
+  weight_decay: 0.05
+  clip_grad: 1.0
+  ema_decay: 0.999
+  init_loss_norm: 100
+  num_workers: 2

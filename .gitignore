@@ -1,0 +1,8 @@
+__pycache__/
+*.pt
+*.npy
+data/
+features/
+runs/**/test_predictions.json
+runs/debug/
+.ipynb_checkpoints/
